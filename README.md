@@ -51,38 +51,38 @@ Alg a2(t)
 ```
 Alg a3(p)
 
-1. s ← 0		{O(1)}
-2. for n ← 1 to 2p	{O(p)}
+1. s ← 0			{O(1)}
+2. for n ← 1 to 2p		{O(p)}
 	for j ← 1 to n		{O(p^2)}
 		s ← s + n	
-			{Total O(p^2)}
+				{Total O(p^2)}
 ```
 ```
 Alg a4(n)
 
-1. s ← 0		{O(1)}
-2. for i ← 1 to n	{O(n)}
-	for j ← 1 to i^2		{O(n^3)}
+1. s ← 0			{O(1)}
+2. for i ← 1 to n		{O(n)}
+	for j ← 1 to i^2	{O(n^3)}
 		s ← s + i	
-			{Total O(n^3)}
+				{Total O(n^3)}
 ```
 ```
 Alg a5(n)
 
-1. s ← 0		{O(1)}
-2. for k ← 1 to n^2	{O(n^2)}
+1. s ← 0			{O(1)}
+2. for k ← 1 to n^2		{O(n^2)}
 	for j ← 1 to k		{O(n^3)}
 		s ← s + k	
-			{Total O(n^3)}
+				{Total O(n^3)}
 ```
 ```
 Alg a6(k,n)
 
-1. s ← 0		{O(1)}
-2. for i ← 1 to n^2	{O(n^2)}
+1. s ← 0			{O(1)}
+2. for i ← 1 to n^2		{O(n^2)}
 	for j ← 2 to k		{O(k*n^2)}
 		s ← s + k	
-			{Total O(k*n^2)}
+				{Total O(k*n^2)}
 ```
 
 ## <연습문제 1-5 Big-Oh 증명>
