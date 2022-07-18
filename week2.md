@@ -7,7 +7,7 @@ Alg arrayMax(A, n)
 1. if (n = 1)
     return A[0]
 2. else
-		return max(A[n-1], arrayMax(A, n-1))
+    return max(A[n-1], arrayMax(A, n-1))
 ```
 
 ## <연습문제 2-2 재귀적 arrayMaxMin>
@@ -19,8 +19,12 @@ Alg arrayMaxMin(A, n)
 1. if (n = 1)
     return A[0], A[0]
 2. else
-    return 
+    l,s ← arrayMaxMin(A, n-1)
+    l ← max(A[n-1], l)
+    s ← min(A[n-1], s)
+    return l,s
 ```
+>잘 모르겠어서 답지 참고
 
 ## <연습문제 3-1 배열의 크기>
 3차원 배열 A[-3..2, 1..4, 0..9]
